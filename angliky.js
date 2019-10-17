@@ -1,3 +1,4 @@
+//const $ = require('jquery')
 let arrVety = undefined;
 
 let btnPrvy = document.getElementById('btn1');
@@ -14,25 +15,14 @@ let slovnik = [];
 let spravnyBtn = 0;
 let ktoraOtazka = 0;
 
-var openFile = function(event) {
-  var input = event.target;
-  var reader = new FileReader();
-  reader.onload = function(){
-    //arrVety = reader.result.split('\n');
-    slovnikJSON(reader.result).then( (data) => {
-      slovnik=data;
-      davajOtazku();
-    });
-  };
-  reader.readAsText(input.files[0]);
-};
-
-
-  $.get( "https://github.com/martinujlaky/anglina/blob/master/slovnik.txt", function( data ) {
-    console.log( data ); // Data returned
-    console.log( "Load was performed." );
+$.get( "https://raw.githubusercontent.com/martinujlaky/anglina/master/slovnik.txt", function( cele ) {
+  slovnikJSON(cele).then( (data) => {
+    slovnik=data;
+    davajOtazku();
   });
+});
 
+window.open('uvod.html','UVOD','height=300,width=600,top=50');
 
 function slovnikJSON ( data )
 {
