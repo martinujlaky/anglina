@@ -27,6 +27,15 @@ var openFile = function(event) {
   reader.readAsText(input.files[0]);
 };
 
+
+  $.getScript( "https://github.com/martinujlaky/anglina/master/slovnik.txt", function( data, textStatus, jqxhr ) {
+    console.log( data ); // Data returned
+    console.log( textStatus ); // Success
+    console.log( jqxhr.status ); // 200
+    console.log( "Load was performed." );
+  });
+
+
 function slovnikJSON ( data )
 {
   let obj = {}; 
