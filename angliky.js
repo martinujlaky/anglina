@@ -28,7 +28,7 @@ var openFile = function(event) {
 };
 
 
-  $.getScript( "https://github.com/martinujlaky/anglina/master/slovnik.txt", function( data, textStatus, jqxhr ) {
+  $.getScript( "https://github.com/martinujlaky/anglina/slovnik.txt", function( data, textStatus, jqxhr ) {
     console.log( data ); // Data returned
     console.log( textStatus ); // Success
     console.log( jqxhr.status ); // 200
