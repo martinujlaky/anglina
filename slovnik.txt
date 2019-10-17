@@ -1,0 +1,11 @@
+jablko;1;ovocie;apple
+hruska;1;ovocie;pear
+slivka;1;ovocie;plum
+hrozno;1;ovocie;grapes
+pes;1;zviera;dog
+krava;1;zviera;cow
+konik;1;zviera;horse
+sliepka;1;zviera;chicken
+strom;1;priroda;tree
+list;1;priroda;leaf
+slnko;1;priroda;sun

@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+   <meta charset="utf-8"> 
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+   <meta name="viewport" content="width=device-width"> 
+   <title>pandrolak</title> 
+   <style type="text/css">
+.center {
+  position: absolute;
+  left: 0;
+  top: 10;
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+   </style>
+   <input id="slovnik" type="file" onchange='openFile(event)' style="margin-right: 100px">
+
+   <div id="bodiky" style="visibility:hidden;color: green;float:right; width:50%;">Pocet dobrych: 0</div>
+   <div id="zloty" style="visibility:hidden;color: red;float:right; width:50%;">Pocet zlych: 0</div>
+
+   <body> 
+     <div>
+       <h2 id="otazka"></h2>
+     </div>
+
+     <div><button id="btn1" type="button" style="visibility:hidden;margin-left: 10px;margin-top: 10px;width: 300px;">Show prvy</button></div>
+     <div><button id="btn2" type="button" style="visibility:hidden;margin-left: 10px;margin-top: 10px;width: 300px;">Show druhy</button></div>  
+     <div><button id="btn3" type="button" style="visibility:hidden;margin-left: 10px;margin-top: 10px;width: 300px;">Show treci</button></div>
+     <div><button id="btn4" type="button" style="visibility:hidden;margin-left: 10px;margin-top: 10px;width: 300px;">Show stvrci</button></div>
+     <script src="angliky.js"></script>
+   </body> 
+</html> 
