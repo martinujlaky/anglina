@@ -28,10 +28,8 @@ var openFile = function(event) {
 };
 
 
-  $.getScript( "https://github.com/martinujlaky/anglina/blob/master/slovnik.txt", function( data, textStatus, jqxhr ) {
+  $.get( "https://github.com/martinujlaky/anglina/blob/master/slovnik.txt", function( data ) {
     console.log( data ); // Data returned
-    console.log( textStatus ); // Success
-    console.log( jqxhr.status ); // 200
     console.log( "Load was performed." );
   });
 
