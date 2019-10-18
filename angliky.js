@@ -8,23 +8,33 @@ let btnStvrty = document.getElementById('btn4');
 let otazka = document.getElementById('otazka');
 let bodiky = document.getElementById('bodiky');
 let zlych = document.getElementById('zloty');
+let selTyp = document.getElementById('selTyp');
+let selDfc = document.getElementById('selDfc');
 
 let totalBodov = 0;
 let totalZlych = 0;
-let slovnik = [];
+let slovnikCely = [];
+let slovnikVybrany = [];
 let spravnyBtn = 0;
 let ktoraOtazka = 0;
+let option = undefined;
+let typIdx = 2;
+let dfcIdx = 2;
+
 
 $.get( "https://raw.githubusercontent.com/martinujlaky/anglina/master/slovnik.txt", function( cele ) {
-  slovnikJSON(cele).then( (data) => {
-    slovnik=data;
-    davajOtazku();
+  vytvorSlovnikzFilu(cele).then( (data) => {
+    slovnikCely=data;
+    slovnikVybrany=data;
+    vyplnComboboxe();
+    davajOtazku(slovnikVybrany);
   });
 });
 
 window.open('uvod.html','UVOD','height=300,width=600,top=50');
 
-function slovnikJSON ( data )
+
+function vytvorSlovnikzFilu ( data )
 {
   let obj = {}; 
   let result = [];
@@ -47,10 +57,9 @@ function slovnikJSON ( data )
   
   resolve (result);
   });
-
 }
 
-function davajOtazku ()
+function davajOtazku (slovnik)
 {
   spravnyBtn = Math.floor(Math.random()*4);
   let odpoved = "";
@@ -58,9 +67,21 @@ function davajOtazku ()
   let cobolo = [];
   let i = 1;
   let current = 0;
+  let odpovIdx = ""
 
-  otazka.innerHTML = 'Ako sa po anglicky povie ' + slovnik[ktoraOtazka]['svk'];
-  odpoved = slovnik[ktoraOtazka]['eng'];
+  // zistime ci bude zo SVK -> ANJ abo ANJ -> SVK 
+  if ( Math.floor(Math.random()*2) == 0 )
+  {
+    otazka.innerHTML = 'Ako sa po anglicky povie "' + slovnik[ktoraOtazka]['svk'] + '"';
+    odpovIdx = 'eng';
+    odpoved = slovnik[ktoraOtazka][odpovIdx];
+  }
+  else
+  {
+    otazka.innerHTML = 'Co v anglictine znamena "' + slovnik[ktoraOtazka]['eng'] + '"';
+    odpovIdx = 'svk';
+    odpoved = slovnik[ktoraOtazka][odpovIdx];
+  }
 
   if (spravnyBtn===0) spravnyBtn=1;
   cobolo.push(ktoraOtazka);
@@ -72,10 +93,10 @@ function davajOtazku ()
     {
       cobolo.push(current);
       switch(i) {
-        case 1: btnPrvy.innerText = slovnik[current]['eng']; break;
-        case 2: btnDruhy.innerText = slovnik[current]['eng']; break;
-        case 3: btnTreti.innerText = slovnik[current]['eng']; break;
-        case 4: btnStvrty.innerText = slovnik[current]['eng']; break;
+        case 1: btnPrvy.innerText = slovnik[current][odpovIdx]; break;
+        case 2: btnDruhy.innerText = slovnik[current][odpovIdx]; break;
+        case 3: btnTreti.innerText = slovnik[current][odpovIdx]; break;
+        case 4: btnStvrty.innerText = slovnik[current][odpovIdx]; break;
       }
       i++;
     }
@@ -102,7 +123,7 @@ function skontroluj ( ktory )
 {
   if (spravnyBtn === ktory)
   {
-    totalBodov = totalBodov + parseInt(slovnik[ktoraOtazka]['dfc']);  
+    totalBodov = totalBodov + parseInt(slovnikVybrany[ktoraOtazka]['dfc']);  
     bodiky.innerText = "Pocet dobrych: " + totalBodov;
   }
   else
@@ -127,9 +148,45 @@ function skontroluj ( ktory )
     btnDruhy.style.backgroundColor = "";
     btnTreti.style.backgroundColor = "";
     btnStvrty.style.backgroundColor = "";
-    davajOtazku();
+    davajOtazku(slovnikVybrany);
   }, 1000);
   
+}
+
+function vyplnComboboxe() 
+{
+  let typDist = [];
+  let dfcDist = [];
+
+  typDist = slovnikCely.reduce( (obj, line) => { 
+    obj.push( line.typ );
+    return obj;
+    }, [] )
+  .filter ( (value, index, self) => { return self.indexOf(value) === index } )
+  ;
+
+  typDist.forEach( (t) => { 
+    option = document.createElement('option');
+    option.innerText = t;
+    selTyp.add(option, typIdx);
+    typIdx++; 
+  });
+
+
+  dfcDist = slovnikCely.reduce( (obj, line) => { 
+    obj.push( line.dfc );
+    return obj;
+    }, [] )
+  .filter ( (value, index, self) => { return self.indexOf(value) === index } )
+  ;
+
+  dfcDist.forEach( (t) => { 
+    option = document.createElement('option');
+    option.innerText = t;
+    selDfc.add(option, dfcIdx);
+    dfcIdx++; 
+  });
+
 }
 
 btnPrvy.onclick = function(event) {
@@ -144,3 +201,25 @@ btnTreti.onclick = function(event) {
 btnStvrty.onclick = function(event) {
   skontroluj(4);
 }
+
+selDfc.onchange = function(event) {
+  selTyp.value = "Vsetko"
+  if (event.target.value == "Vsetko")
+    slovnikVybrany = slovnikCely
+  else
+    slovnikVybrany = slovnikCely.filter( (item) => { 
+      return item.dfc == event.target.value 
+    });
+  davajOtazku(slovnikVybrany); 
+};
+
+selTyp.onchange = function(event) {
+  selDfc.value = "Vsetko"
+  if (event.target.value == "Vsetko")
+    slovnikVybrany = slovnikCely
+  else
+    slovnikVybrany = slovnikCely.filter( (item) => { 
+      return item.typ == event.target.value 
+    });
+  davajOtazku(slovnikVybrany); 
+};

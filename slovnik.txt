@@ -1,105 +1,389 @@
 ## ovocie zelenina
-jablko;1;ovozel;apple
-hruska;1;ovozel;pear
-slivka;1;ovozel;plum
-hrozno;1;ovozel;grapes
-citron;1;ovozel;lemon
-broskyna;1;ovozel;peach
-mrkva;1;ovozel;carrot
-kapustal;2;ovozel;cabbage
-paprika;1;ovozel;pepper
-rajcina;1;ovozel;tomato
-zemiak;1;ovozel;potato
-hrach;2;ovozel;peas
-fazula;2;ovozel;bean
-pomaranc;1;ovozel;orange
+jablko;1;potraviny;apple;
+hruska;1;potraviny;pear;
+slivka;1;potraviny;plum;
+hrozno;1;potraviny;grapes;
+citron;1;potraviny;lemon;
+broskyna;1;potraviny;peach;
+mrkva;1;potraviny;carrot;
+kapusta;2;potraviny;cabbage;
+paprika;1;potraviny;pepper;
+rajcina;1;potraviny;tomato;
+zemiak;1;potraviny;potato;
+hrach;2;potraviny;peas;
+fazula;2;potraviny;bean;
+pomaranc;1;potraviny;orange;
+ananas;1;potraviny;pineapple;
+ovocie;1;potraviny;fruit;
+zelenina;1;potraviny;vegetable;
+uhorka;1;potraviny;cucumber;
+jahoda;1;potraviny;strawberry;
+malina;2;potraviny;raspberry;
+cucoriedka;2;potraviny;blueberry;
+ceresna;1;potraviny;cherry;
+mlienko;1;potraviny;milk;
+chleba;1;potraviny;bread;
+caj;1;potraviny;tea;
+vajce;1;potraviny;egg;
+maslo;1;potraviny;butter;
+pecivo;1;potraviny;roll;
+kolac;1;potraviny;pie;
+keksik;1;potraviny;biscuit;
+melon;1;potraviny;melon;
+horcica;1;potraviny;mustard;
+kecup;1;potraviny;ketchup;
+ryza;1;potraviny;rice;
+kolac;1;potraviny;cake;
+banan;1;potraviny;banana;
+kukurica;1;potraviny;corn;
+hranolky;1;potraviny;fries;
+kysla uhorka;2;potraviny;pickle;
+salat;1;potraviny;salad;
+hlavkovy salat;2;potraviny;lettuce;
+redkovka;2;potraviny;radish;
+brokolicka;2;potraviny;brocoli;
+cuketa;2;potraviny;zucchini;
+tekvica;2;potraviny;pumpkin;
+kiwi;1;potraviny;kiwi;
+hrib;1;potraviny;mashroom;
+kokos;1;potraviny;coconut;
+orechy;1;potraviny;nuts;
+cibula;1;potraviny;onion;
+cesnak;1;potraviny;garlick;
+grep;1;potraviny;grapefruit;
+polievka;1;potraviny;soup;
+cestovina;1;potraviny;pasta;
+hrianka;1;potraviny;toast;
+prazenica;2;potraviny;scrambled eggs;
+pecene kura;1;potraviny;roost chicken;
+slanina;1;potraviny;bacon;
+salam;1;potraviny;salami;
+sol;1;potraviny;salt;
+korenie;1;potraviny;spice;
+ocot;1;potraviny;vinegar;
+voda;1;potraviny;water;
+dzus;1;potraviny;juice;
+syr;1;potraviny;cheese;
+klobasa;1;potraviny;sausage;
+ryba;1;potraviny;fish;
+maso;1;potraviny;meat;
+cukor;1;potraviny;sugar;
+cukriky;1;potraviny;sweets;
+lizatko;1;potraviny;lollipop;
+zmrzlina;1;potraviny;icecream;
 ## zvierata
-pes;1;zviera;dog
-krava;1;zviera;cow
-konik;1;zviera;horse
-sliepka;1;zviera;chicken
-ovca;1;zviera;sheep
-macka;1;zviera;cat
-pav;1;zviera;peacock
-holub;1;zviera;pigeon
-vtak;1;zviera;bird
-orol;1;zviera;eagle
-havran;2;zviera;raven
-had;1;zviera;snake
-lev;1;zviera;lion
-opica;1;zviera;monkey
-somar;1;zviera;donkey
-prasa;1;zviera;pig
-krokodil;1;zviera;crocodile
-tava;1;zviera;camel
+pes;1;zvierata;dog;
+krava;1;zvierata;cow;
+konik;1;zvierata;horse;
+sliepka;1;zvierata;chicken;
+ovca;1;zvierata;sheep;
+macka;1;zvierata;cat;
+pav;1;zvierata;peacock;
+holub;1;zvierata;pigeon;
+vtak;1;zvierata;bird;
+orol;1;zvierata;eagle;
+havran;2;zvierata;raven;
+had;1;zvierata;snake;
+lev;1;zvierata;lion;
+opica;1;zvierata;monkey;
+somar;1;zvierata;donkey;
+prasa;1;zvierata;pig;
+krokodil;1;zvierata;crocodile;
+tava;1;zvierata;camel;
+pavuk;1;zvierata;spider;
+nosorozec;1;zvierata;rhino;
+sova;1;zvierata;owl;
+vevericka;1;zvierata;squirrel;
+liska;1;zvierata;fox;
+ryba;1;zvierata;fish;
+delfin;1;zvierata;dolphin;
+velryba;1;zvierata;whale;
+kosatka;1;zvierata;orc;
+tulen;1;zvierata;seal;
+leopard;1;zvierata;leopard;
+tiger;1;zvierata;tiger;
+gepard;1;zvierata;cheetah;
+medved;1;zvierata;bear;
+jelen;2;zvierata;deer;
+sokol;2;zvierata;falcon;
+mravec;1;zvierata;ant;
+zralok;1;zvierata;shark;
+korytnacka;1;zvierata;turtle;
+leguan;2;zvierata;iguana;
+kacica;1;zvierata;duck;
+hus;1;zvierata;goose;
+kohut;1;zvierata;rooster;
+kuriatko;1;zvierata;chick;
+moriak;2;zvierata;turkey;
+byk;2;zvierata;bull;
+koza;1;zvierata;goat;
+zajac;1;zvierata;rabbit;
+morciatko;1;zvierata;guinea pig;
+skrecok;2;zvierata;hamster;
+mys;1;zvierata;mouse;
+klokan;1;zvierata;kangaroo;
+zirafa;1;zvierata;giraffe;
+slon;1;zvierata;elephant;
+hroch;1;zvierata;hippo;
+panda;1;zvierata;panda;
+koala;1;zvierata;koala;
+lenochod;2;zvierata;sloth;
+chameleon;2;zvierata;chameleon;
+skorpion;1;zvierata;scorpion;
+papagaj;2;zvierata;parrot;
+krab;1;zvierata;crab;
+chobotnica;1;zvierata;octopus;
+raja;1;zvierata;ray;
+meduza;1;zvierata;jellyfish;
+morsky konik;1;zvierata;seahorse;
+hviezdica;1;zvierata;starfish;
+tuniak;1;zvierata;tuna;
+bizon;2;zvierata;buffalo;
+motyl;1;zvierata;butterfly;
+mucha;1;zvierata;fly;
+vazka;1;zvierata;dragonfly;
+chrobak;1;zvierata;beetle;
+zaba;1;zvierata;frog;
+potkan;2;zvierata;rat;
 ## priroda
-strom;1;priroda;tree
-list;1;priroda;leaf
-slnko;1;priroda;sun
-oblak;1;priroda;cloud
-piesok;1;priroda;sand
-kamen;1;priroda;stone
-strom;1;priroda;tree
-hlina;1;priroda;dirt
-zem;1;priroda;earth
-prach;1;priroda;dust
-jazero;1;priroda;lake
-rieka;2;priroda;river
-cesta;2;priroda;road
-auto;1;priroda;car
-lietadlo;1;priroda;airplane
-vlak;1;priroda;train
+strom;1;priroda;tree;
+list;1;priroda;leaf;
+slnko;1;priroda;sun;
+oblak;1;priroda;cloud;
+piesok;1;priroda;sand;
+kamen;1;priroda;stone;
+strom;1;priroda;tree;
+hlina;1;priroda;dirt;
+zem;1;priroda;earth;
+prach;1;priroda;dust;
+jazero;1;priroda;lake;
+rieka;2;priroda;river;
+cesta;2;priroda;road;
+auto;1;priroda;car;
+lietadlo;1;priroda;airplane;
+vlak;1;priroda;train;
+den;1;priroda;day;
+noc;1;priroda;night;
+kvetina;1;priroda;flower;
+hrad;1;priroda;castle;
+pevnost;2;priroda;fortress;
+most;1;priroda;bridge;
+kopec;1;priroda;hill;
+hora;1;priroda;mountain;
+sneh;1;priroda;snow;
+jar;1;priroda;spring;
+leto;1;priroda;summer;
+jesen;1;priroda;autumn;
+zima;1;priroda;winter;
+dast;1;priroda;rain;
+snehuliak;1;priroda;snowman;
+dom;1;priroda;house;
+ihrisko;2;priroda;playground;
+bicykel;1;priroda;bike;
+trolejbus;1;priroda;troley bus;
+elektricka;1;priroda;tram;
+metro;1;priroda;metro;
+lavicka;1;priroda;bench;
+koleso;1;priroda;wheel;
+cln;1;priroda;boat;
+schody;1;priroda;stairs;
+hviezda;1;priroda;star;
+vesmirna raketa;1;priroda;space rocket;
+trava;1;priroda;grass;
+lopta;1;priroda;ball;
+drevo;2;priroda;wood;
+zelezo;1;priroda;iron;
+chodnik;1;priroda;sidewalk;
+mapa;1;priroda;map;
+konar;2;priroda;branch;
+vzduch;2;priroda;air;
+ohen;1;priroda;fire;
+pneumatika;2;priroda;tire;
+korcule;1;priroda;skates;
+kolobezka;1;priroda;scooter;
+mur;1;priroda;wall;
+more;1;priroda;sea;
+hotel;1;priroda;hotel;
+plaz;1;priroda;beach;
+ostrov;1;priroda;island
+ponorka;2;priroda;submarine;
+lanovka;2;priroda;cablecar;
+skala;1;priroda;rock;
+krik;1;priroda;bush;
+skola;1;priroda;school;
+palica;2;priroda;stick;
+luka;2;priroda;meadow;
+les;1;priroda;forest;
+chata;2;priroda;cottage;
+dedina;2;priroda;village;
+mesto;1;priroda;city;
+kostol;1;priroda;church;
+obchod;1;priroda;shop;
+posta;2;priroda;post office;
+mesiac;1;priroda;moon;
+den;1;priroda;day;
+rok;1;priroda;year;
 ## farby
-zlta;1;farba;yellow
-modra;1;farba;blue
-hneda;1;farba;brown
-biele;1;farba;white
-cierna;1;farba;black
-zelena;1;farba;green
-cervena;1;farba;red
-ruzova;1;farba;pink
-fialova;1;farba;purple
+zlta;1;farby;yellow;
+modra;1;farby;blue;
+hneda;1;farby;brown;
+biele;1;farby;white;
+cierna;1;farby;black;
+zelena;1;farby;green;
+cervena;1;farby;red;
+ruzova;1;farby;pink;
+fialova;1;farby;purple;
+zlata;1;farby;golden;
+strieborna;1;farby;silver;
+seda;1;farby;gray;
+orandzova;1;farby;orange;
 ## ludske telo
-hlava;1;telo;head
-ruka;1;telo;hand
-rameno;1;telo;arm
-nos;1;telo;nose
-celo;1;telo;forehead
-oko;1;telo;eye
-ucho;1;telo;ear
-vlasy;1;telo;hair
-noha;1;telo;leg
-chodidlo;1;telo;foot
-koleno;1;telo;knee
-prst;1;telo;finger
-necht;2;telo;nail
-laket;2;telo;elbow
-brucho;1;telo;belly
-zaludok;1;telo;stomach
-krk;1;telo;neck
-obocie;2;telo;eyebrow
-svaly;1;telo;muscle
-poprsie;1;telo;brest
-chrbat;1;telo;back
+hlava;1;ludske telo;head;
+ruka;1;ludske telo;hand;
+rameno;1;ludske telo;shoulder;
+cela ruka;2;ludske telo;arm;
+nos;1;ludske telo;nose;
+celo;1;ludske telo;forehead;
+oko;1;ludske telo;eye;
+ucho;1;ludske telo;ear;
+vlasy;1;ludske telo;hair;
+noha;1;ludske telo;leg;
+chodidlo;1;ludske telo;foot;
+koleno;1;ludske telo;knee;
+prst;1;ludske telo;finger;
+necht;2;ludske telo;nail;
+laket;2;ludske telo;elbow;
+brucho;1;ludske telo;belly;
+zaludok;1;ludske telo;stomach;
+krk;1;ludske telo;neck;
+obocie;2;ludske telo;eyebrow;
+svaly;2;ludske telo;muscle;
+poprsie;2;ludske telo;brest;
+chrbat;2;ludske telo;back;
+bok;2;ludske telo;hip;
+pas;2;ludske telo;waist;
+zapastie;2;ludske telo;wrist;
+usta;1;ludske telo;mouth;
+clenok;2;ludske telo;ankle;
+palec;2;ludske telo;toe;
+pata;2;ludske telo;heel;
+lice;2;ludske telo;cheek;
+brada;2;ludske telo;chin;
+zuby;2;ludske telo;teeth;
+zub;2;ludske telo;tooth;
+jazyk;2;ludske telo;tongue;
+zadok;2;ludske telo;buttock;
+tvar;2;ludske telo;face;
+kost;2;ludske telo;bone;
+srdce;2;ludske telo;heart;
+mozog;2;ludske telo;brain;
+pluca;2;ludske telo;lungs;
+pecen;2;ludske telo;liver;
+oblicka;2;ludske telo;kidney;
+cieva;2;ludske telo;vein;
 ## veci doma
-stolicka;1;domov;chair
-stol;1;domov;table
-stena;1;domov;wall
-dvere;1;domov;door
-obyvacka;1;domov;living room
-kuchyna;1;domov;kitchen
-spalna;1;domov;bedroom
-postel;1;domov;bed
-koberec;2;domov;carpet
-okno;1;domov;window
-gauc;1;domov;sofa
-lampa;1;domov;lamp
-umyvadlo;1;domov;sink
-podlaha;1;domov;floor
-krina na saty;2;domov;wardrobe
-krabica;1;domov;box
-nozik;1;domov;knife
-vidlicka;1;domov;fork
-lyzicka;1;domov;spoon
-naberacka;2;domov;ladle
-
+stolicka;1;domov;chair;
+stol;1;domov;table;
+stena;1;domov;wall;
+dvere;1;domov;door;
+obyvacka;1;domov;living room;
+kuchyna;1;domov;kitchen;
+spalna;1;domov;bedroom;
+postel;1;domov;bed;
+koberec;2;domov;carpet;
+okno;1;domov;window;
+gauc;1;domov;sofa;
+lampa;1;domov;lamp;
+umyvadlo;1;domov;sink;
+podlaha;1;domov;floor;
+satnik;2;domov;wardrobe;
+krabica;1;domov;box;
+nozik;1;domov;knife;
+vidlicka;1;domov;fork;
+lyzicka;1;domov;spoon;
+naberacka;2;domov;ladle;
+pohar;2;domov;glass;
+smetny kos;2;domov;dust basket;
+tanier;2;domov;plate;
+mikrovlnka;2;domov;mircowave;
+kreslo;2;domov;arm-chair;
+mydlo;2;domov;soap;
+sampon;1;domov;shampoo;
+vana;1;domov;bath;
+kupelka;1;domov;bathroom;
+zubna kefka;2;domov;tooth brush;
+zubna pasta;2;domov;tooth paste;
+uterak;2;domov;towel;
+vankus;2;domov;cushion;
+skrina;2;domov;closet;
+miska;2;domov;dish;
+plechovka;2;domov;tin;
+varecha;2;domov;scoop;
+hracky;2;domov;toys;
+kniznica;2;domov;bookcase;
+strop;2;domov;ceiling;
+zrkadlo;2;domov;mirror;
+pocitac;;1;domov;computer;
+telefon;1;domov;phone;
+televizor;1;domov;TV;
+chladnicka;2;domov;fridge;
+pracka;2;domov;washing-machine;
+zachod;2;domov;toilet;
+kniha;1;domov;book;
+casopis;2;domov;magazine;
+radio;1;domov;radio;
+vedro;2;domov;bucket;
+balon;1;domov;baloon;
+## oblecenie
+oblecenie;1;oblecenie;clothes;
+nohavice;1;oblecenie;pants;
+tricko;1;oblecenie;shirt;
+sveter;1;oblecenie;sweater;
+sukna;1;oblecenie;skirt;
+bunda;1;oblecenie;jacket;
+ponozky;1;oblecenie;socks;
+pancuchy;2;oblecenie;stockings;
+kosela;2;oblecenie;sark;
+capica;1;oblecenie;cap;
+sal;1;oblecenie;scarf;
+rukavice;1;oblecenie;gloves;
+topanky;1;oblecenie;shoes;
+cizmy;1;oblecenie;boots;
+slapky;2;oblecenie;slippers;
+kratasy;2;oblecenie;titch;
+kabat;2;oblecenie;coat;
+trenky;1;oblecenie;shorts;
+sandale;1;oblecenie;sandals;
+plavky;1;oblecenie;swim-suit;
+obkek;1;oblecenie;suit;
+rifle;1;oblecenie;jeans;
+## frazy
+ako sa mas;2;frazy;how are you;
+mam sa dobre;2;frazy;i am fine;
+kto je to;2;frazy;who is it;
+kde je to;2;frazy;where is it;
+co je toto;2;frazy;what is this;
+toto je moj brat;2;frazy;this is my brother;
+tam je kniha;2;frazy;there is book;
+tam je to;2;frazy;there it is;
+moje meno je;2;frazy;my name is;
+kolko je hodin;2;frazy;what time is it;
+ja som;1;frazy;i am;
+ty si;1;frazy;you are;
+on je;1;frazy;he is;
+ona je;1;frazy;she is;
+koho je to;2;frazy;whose is it;
+dakujem;1;frazy;thank you;
+mozem dostat kolac;1;frazy;can i get cake;
+dobry den;1;frazy;good day;
+dobre rano;1;frazy;good morning;
+dobru noc;1;frazy;good night;
+kde som;2;frazy;where am i;
+vitaj;1;frazy;welcome;
+nech sa paci;1;frazy;here you are;
+chces pohar vody;2;frazy;would you like a cup of water;
+mas;2;frazy;you have;
+chcel by som;2;frazy;i would like;
+kedy bude obed;2;frazy;
+ahoj;1;frazy;hello;
+kam ides;2;frazy;where are you going;

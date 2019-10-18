@@ -7,10 +7,16 @@
    <title>Angila</title> 
    <style type="text/css">
    </style>
-
-   <div id="bodiky" style="visibility:hidden;color: green;">Pocet dobrych: 0</div>
-   <div id="zloty" style="visibility:hidden;color: red;">Pocet zlych: 0</div>
-
+   <p type="text" id="bodiky" style="visibility:hidden;color: green;">Pocet dobrych: 0</p>
+   <p id="zloty" style="visibility:hidden;color: red;">Pocet zlych: 0</p>
+   <select id="selTyp">
+    <option selected disabled>Vyber skupinu</option>
+    <option>Vsetko</option>
+   </select>
+   <select id="selDfc" style="margin-left: 100px;">
+    <option selected disabled>Vyber zlozitost</option>
+    <option>Vsetko</option>
+   </select> 
    <body> 
      <div>
        <h2 id="otazka" style="margin-top: 10px;"></h2>
@@ -21,7 +27,7 @@
      <div><button id="btn3" type="button" style="visibility:hidden;margin-left: 10px;margin-top: 10px;width: 300px;">Show treci</button></div>
      <div><button id="btn4" type="button" style="visibility:hidden;margin-left: 10px;margin-top: 10px;width: 300px;">Show stvrci</button></div>
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+     <script src="jquery.js" type="text/javascript"></script>
      <script src="angliky.js"></script>
    </body> 
 </html> 
